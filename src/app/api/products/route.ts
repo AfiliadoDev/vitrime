@@ -29,13 +29,16 @@ export async function POST(request: NextRequest) {
     }
 
     const body = await request.json()
-    const { name, description, image, affiliateLink } = body
+    const { name, description, image, affiliateLink, category, images } = body
 
     const result = await addProduct({
       name,
       description,
       image,
-      affiliateLink
+      images,
+      affiliateLink,
+      category,
+      createdAt: new Date().toISOString()
     })
 
     if (!result.success) {
@@ -65,7 +68,7 @@ export async function PUT(request: NextRequest) {
     }
 
     const body = await request.json()
-    const { id, name, description, image, affiliateLink } = body
+    const { id, name, description, image, affiliateLink, category, images } = body
 
     if (!id) {
       return NextResponse.json(
@@ -78,7 +81,9 @@ export async function PUT(request: NextRequest) {
       name,
       description,
       image,
-      affiliateLink
+      images,
+      affiliateLink,
+      category
     })
 
     if (!result.success) {
