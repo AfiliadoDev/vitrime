@@ -172,7 +172,8 @@ export default function AdminPage() {
           body: JSON.stringify({
             id: editingProduct?.id,
             ...formData,
-            images: []
+            images: editingProduct?.images || [],
+            createdAt: editingProduct?.createdAt || new Date().toISOString()
           })
         })
       }
