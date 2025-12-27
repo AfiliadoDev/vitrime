@@ -16,10 +16,10 @@ const config: Config = {
         },
         // Cores otimizadas para conversão
         brand: {
-          primary: '#8B5CF6',    // Roxo/Púrpura vibrante
-          secondary: '#F7931E',  // Laranja energético
-          accent: '#A855F7',     // Roxo claro
-          hot: '#C026D3',        // Magenta
+          primary: '#10b981',    // Verde esmeralda
+          secondary: '#14b8a6',  // Verde-azulado (teal)
+          accent: '#34d399',     // Verde claro
+          hot: '#059669',        // Verde escuro
         },
         conversion: {
           orange: '#FF8C42',     // Laranja suave

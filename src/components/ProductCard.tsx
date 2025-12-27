@@ -58,7 +58,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         <button
           onClick={handleBuyClick}
           className="relative w-full overflow-hidden rounded-2xl py-3 px-4 font-bold text-white text-sm sm:text-base
-                     bg-gradient-to-r from-brand-primary to-brand-accent hover:from-purple-600 hover:to-purple-500
+                     bg-gradient-to-r from-brand-primary to-brand-accent hover:from-emerald-600 hover:to-green-500
                      transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98]
                      shadow-lg shadow-brand-primary/30 hover:shadow-xl hover:shadow-brand-primary/50
                      flex items-center justify-center gap-1.5 group/btn"

@@ -188,7 +188,7 @@ export default function ProductModal({ product, isOpen, onClose }: ProductModalP
                 <button
                   onClick={handleBuyClick}
                   className="relative w-full overflow-hidden rounded-2xl py-4 px-6 font-bold text-white text-lg
-                             bg-gradient-to-r from-brand-primary to-brand-accent hover:from-purple-600 hover:to-purple-500
+                             bg-gradient-to-r from-brand-primary to-brand-accent hover:from-emerald-600 hover:to-green-500
                              transition-all duration-300 transform hover:scale-[1.03] active:scale-[0.98]
                              shadow-xl shadow-brand-primary/40 hover:shadow-2xl hover:shadow-brand-primary/60
                              flex items-center justify-center gap-2 group/btn"
