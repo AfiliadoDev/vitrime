@@ -26,7 +26,7 @@ export default function Footer() {
             </div>
             <div className="text-left hidden sm:block">
               <p className="text-sm font-bold text-white">Seleção Premium</p>
-              <p className="text-xs text-gray-400">Ofertas Curadas</p>
+              <p className="text-xs text-gray-400">Ofertas Validadas</p>
             </div>
           </div>
 
