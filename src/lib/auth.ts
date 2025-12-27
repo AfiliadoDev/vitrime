@@ -203,11 +203,17 @@ export function validateAffiliateUrl(url: string): boolean {
       return false
     }
 
-    // Apenas domínios Shopee
-    const allowedDomains = ['shope.ee', 'shopee.com.br', 'shopee.com']
+    // Apenas domínios Shopee (incluindo subdomínios)
+    const allowedPatterns = [
+      'shope.ee',
+      'shopee.com.br',
+      'shopee.com'
+    ]
 
-    return allowedDomains.some(domain =>
-      parsed.hostname === domain || parsed.hostname.endsWith('.' + domain)
+    return allowedPatterns.some(pattern =>
+      parsed.hostname === pattern ||
+      parsed.hostname.endsWith('.' + pattern) ||
+      parsed.hostname.includes(pattern)
     )
   } catch {
     return false

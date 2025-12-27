@@ -39,7 +39,7 @@ export const products: Product[] = [
       "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m32fcmqrnwg5af.webp",
       "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m32fcmqrnwg5af.webp"
     ],
-    "affiliateLink": "https://s.shopee.com.br/4AtD5wE3bj",
+    "affiliateLink": "https://s.shopee.com.br/60KspWCuJ0",
     "category": "Cozinha",
     "createdAt": "2025-12-26T00:00:00.000Z"
   }
