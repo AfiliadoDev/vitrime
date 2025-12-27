@@ -72,7 +72,7 @@ export default function ProductModal({ product, isOpen, onClose }: ProductModalP
           {/* Botão Fechar */}
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 z-10 bg-brand-accent hover:bg-brand-hot rounded-full p-3 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110 active:scale-95"
+            className="absolute top-4 right-4 z-10 bg-black/60 hover:bg-black/80 backdrop-blur-sm rounded-full p-3 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110 active:scale-95 border border-white/20"
             aria-label="Fechar"
           >
             <X className="w-6 h-6 text-white font-bold" strokeWidth={3} />
