@@ -68,7 +68,7 @@ export async function PUT(request: NextRequest) {
     }
 
     const body = await request.json()
-    const { id, name, description, image, affiliateLink, category, images } = body
+    const { id, name, description, image, affiliateLink, category, images, createdAt } = body
 
     if (!id) {
       return NextResponse.json(
@@ -83,7 +83,8 @@ export async function PUT(request: NextRequest) {
       image,
       images,
       affiliateLink,
-      category
+      category,
+      createdAt
     })
 
     if (!result.success) {
