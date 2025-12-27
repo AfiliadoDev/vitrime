@@ -159,7 +159,10 @@ export default function AdminPage() {
         res = await fetch('/api/products', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(formData)
+          body: JSON.stringify({
+            ...formData,
+            images: []
+          })
         })
       } else {
         // Atualizar produto existente
@@ -168,7 +171,8 @@ export default function AdminPage() {
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             id: editingProduct?.id,
-            ...formData
+            ...formData,
+            images: []
           })
         })
       }
