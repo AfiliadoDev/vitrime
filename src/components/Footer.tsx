@@ -22,7 +22,7 @@ export default function Footer() {
           <div className="glass rounded-2xl px-3 sm:px-6 py-2 sm:py-4 flex items-center gap-2 sm:gap-3 group hover:bg-white/10 transition-all">
             <div className="relative w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center flex-shrink-0">
               <div className="absolute inset-0 bg-orange-500 blur-lg opacity-50 animate-pulse"></div>
-              <Award className="relative w-6 h-6 sm:w-7 sm:h-7 text-orange-400 animate-bounce-slow" style={{ animationDelay: '0.5s' }} />
+              <Award className="relative w-6 h-6 sm:w-7 sm:h-7 text-orange-400 animate-bounce-slow" />
             </div>
             <div className="text-left hidden sm:block">
               <p className="text-sm font-bold text-white">Seleção Premium</p>
@@ -34,7 +34,7 @@ export default function Footer() {
           <div className="glass rounded-2xl px-3 sm:px-6 py-2 sm:py-4 flex items-center gap-2 sm:gap-3 group hover:bg-white/10 transition-all">
             <div className="relative w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center flex-shrink-0">
               <div className="absolute inset-0 bg-blue-500 blur-lg opacity-40 animate-pulse"></div>
-              <TrendingUp className="relative w-6 h-6 sm:w-7 sm:h-7 text-blue-400 animate-bounce-slow" style={{ animationDelay: '1s' }} />
+              <TrendingUp className="relative w-6 h-6 sm:w-7 sm:h-7 text-blue-400 animate-bounce-slow" />
             </div>
             <div className="text-left hidden sm:block">
               <p className="text-sm font-bold text-white">Sempre Atualizado</p>
