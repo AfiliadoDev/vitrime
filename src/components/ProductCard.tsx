@@ -54,15 +54,14 @@ export default function ProductCard({ product }: ProductCardProps) {
           {product.description}
         </p>
 
-        {/* Botão de compra - Laranja/Vermelho para máxima conversão */}
+        {/* Botão de compra */}
         <button
           onClick={handleBuyClick}
-          className="relative w-full overflow-hidden rounded-2xl py-3 px-4 font-black text-white text-sm sm:text-base
-                     bg-gradient-to-r from-brand-primary to-brand-accent hover:from-conversion-orange-dark hover:to-conversion-red-dark
-                     transition-all duration-300 transform hover:scale-[1.03] active:scale-[0.97]
-                     shadow-xl shadow-brand-accent/50 hover:shadow-2xl hover:shadow-brand-accent/70
-                     flex items-center justify-center gap-1.5 group/btn
-                     border-2 border-brand-primary/30"
+          className="relative w-full overflow-hidden rounded-2xl py-3 px-4 font-bold text-white text-sm sm:text-base
+                     bg-gradient-to-r from-brand-primary to-brand-accent hover:from-purple-600 hover:to-purple-500
+                     transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98]
+                     shadow-lg shadow-brand-primary/30 hover:shadow-xl hover:shadow-brand-primary/50
+                     flex items-center justify-center gap-1.5 group/btn"
         >
           <ShoppingCart className="w-4 h-4 sm:w-5 sm:h-5" />
           <span className="relative z-10">COMPRAR</span>

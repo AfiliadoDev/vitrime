@@ -14,12 +14,12 @@ const config: Config = {
           card: '#1a1a1a',
           border: '#2a2a2a',
         },
-        // Cores otimizadas para conversão baseadas em psicologia das cores
+        // Cores otimizadas para conversão
         brand: {
-          primary: '#FF6B35',    // Laranja vibrante (líder em conversão no Brasil)
+          primary: '#8B5CF6',    // Roxo/Púrpura vibrante
           secondary: '#F7931E',  // Laranja energético
-          accent: '#FF4545',     // Vermelho urgência (34% mais cliques)
-          hot: '#FF2E63',        // Rosa-vermelho chamativo
+          accent: '#A855F7',     // Roxo claro
+          hot: '#C026D3',        // Magenta
         },
         conversion: {
           orange: '#FF8C42',     // Laranja suave

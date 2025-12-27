@@ -116,21 +116,21 @@
     }
   }
 
-  /* Animação de brilho para ícone - laranja */
+  /* Animação de brilho para ícone - roxo */
   .icon-shine {
-    filter: drop-shadow(0 0 8px #FF6B35);
+    filter: drop-shadow(0 0 8px #8B5CF6);
     animation: iconShine 3s linear infinite;
   }
 
   @keyframes iconShine {
     0% {
-      filter: drop-shadow(0 0 8px #FF6B35) brightness(1);
+      filter: drop-shadow(0 0 8px #8B5CF6) brightness(1);
     }
     50% {
       filter: drop-shadow(0 0 20px #fff) brightness(1.5);
     }
     100% {
-      filter: drop-shadow(0 0 8px #FF6B35) brightness(1);
+      filter: drop-shadow(0 0 8px #8B5CF6) brightness(1);
     }
   }
 }

@@ -187,12 +187,11 @@ export default function ProductModal({ product, isOpen, onClose }: ProductModalP
 
                 <button
                   onClick={handleBuyClick}
-                  className="relative w-full overflow-hidden rounded-2xl py-4 px-6 font-black text-white text-lg
-                             bg-gradient-to-r from-brand-primary to-brand-accent hover:from-conversion-orange-dark hover:to-conversion-red-dark
-                             transition-all duration-300 transform hover:scale-[1.05] active:scale-[0.97]
-                             shadow-xl shadow-brand-accent/50 hover:shadow-2xl hover:shadow-brand-accent/70
-                             flex items-center justify-center gap-2 group/btn
-                             border-2 border-brand-accent/50"
+                  className="relative w-full overflow-hidden rounded-2xl py-4 px-6 font-bold text-white text-lg
+                             bg-gradient-to-r from-brand-primary to-brand-accent hover:from-purple-600 hover:to-purple-500
+                             transition-all duration-300 transform hover:scale-[1.03] active:scale-[0.98]
+                             shadow-xl shadow-brand-primary/40 hover:shadow-2xl hover:shadow-brand-primary/60
+                             flex items-center justify-center gap-2 group/btn"
                 >
                   <ShoppingCart className="w-6 h-6" />
                   <span className="relative z-10">COMPRAR NA SHOPEE</span>

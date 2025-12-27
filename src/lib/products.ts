@@ -83,6 +83,7 @@ function sanitizeProduct(product: Partial<Product>): Partial<Product> {
     name: product.name ? sanitizeString(product.name) : '',
     description: product.description ? sanitizeString(product.description) : '',
     image: product.image ? product.image.trim() : '',
+    images: product.images || [],
     affiliateLink: product.affiliateLink ? product.affiliateLink.trim() : '',
     category: product.category ? sanitizeString(product.category) : '',
     createdAt: product.createdAt || new Date().toISOString()
@@ -120,7 +121,11 @@ export async function saveProducts(products: Product[]): Promise<{ success: bool
 //    - name: nome do produto (curto e direto)
 //    - description: descrição curta que vende
 //    - image: URL da imagem da Shopee (clique com botão direito > copiar endereço da imagem)
+//    - images: [OPCIONAL] Array com 3-5 URLs de imagens adicionais para galeria do produto
 //    - affiliateLink: seu link de afiliado da Shopee
+//    - category: escolha uma categoria (Cozinha, Quarto, Sala, Banheiro, Eletrônicos, Moda, Beleza, etc)
+//               ou crie uma nova digitando o nome
+//    - createdAt: data de criação (gerada automaticamente)
 // 4. Salve o arquivo
 // 5. O site atualiza automaticamente
 // ============================================
@@ -130,7 +135,10 @@ export interface Product {
   name: string
   description: string
   image: string
+  images?: string[] // OPCIONAL: Array com 3-5 imagens adicionais para a galeria
   affiliateLink: string
+  category: string
+  createdAt: string
 }
 
 export const products: Product[] = ${JSON.stringify(sanitizedProducts, null, 2)}
