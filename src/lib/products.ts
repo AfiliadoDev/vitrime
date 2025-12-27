@@ -12,15 +12,16 @@ export async function getProducts(): Promise<Product[]> {
   try {
     const fileContent = await fs.readFile(PRODUCTS_FILE, 'utf-8')
 
-    // Extrai o array de produtos usando regex
-    const match = fileContent.match(/export const products: Product\[\] = (\[[\s\S]*?\])/m)
+    // Extrai o array de produtos usando regex mais robusto
+    const match = fileContent.match(/export const products: Product\[\] = (\[[\s\S]*\])\s*$/m)
 
     if (!match) {
+      console.error('Regex não encontrou produtos')
       return []
     }
 
     // Avalia o array de forma segura
-    const productsArray = eval(match[1]) as Product[]
+    const productsArray = JSON.parse(match[1]) as Product[]
     return productsArray || []
   } catch (error) {
     console.error('Erro ao ler produtos:', error)
